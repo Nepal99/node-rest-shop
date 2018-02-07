@@ -16,7 +16,9 @@ const port = process.env.PORT || 3000;
  * we will create the server and store in the constant by using the http module and the createServer() command.
  * We will pass the listener to the createServer() command, which is essentially a function which is executed when received new a request or produce response.  
  */
-const server = http.createServer(app);
+const server = http.createServer(app).listen(port, function(){
+  console.log("Application listening to the port " + port);
+})
 
 // start the server by listening to the port declared. 
-server.listen(port);
+//server.listen(port);
