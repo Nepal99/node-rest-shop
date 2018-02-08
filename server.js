@@ -18,7 +18,7 @@ const port = process.env.PORT || 3000;
  */
 const server = http.createServer(app).listen(port, function(){
   console.log("Application listening to the port " + port);
-})
+});
 
 // start the server by listening to the port declared. 
 //server.listen(port);
